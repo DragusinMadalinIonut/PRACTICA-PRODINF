@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="BackendDataApplication" type="DatabaseScript" editBeforeRun="true">
+    <script-file value="$PROJECT_DIR$/backend_data/src/main/resources/application.properties" />
+    <script-mode>FILE</script-mode>
+    <data-source id="cc9fb71c-a018-4258-aee3-7dd8595f8e87" namespace="schema/&quot;TicketsManagement&quot;" />
+    <method v="2" />
+  </configuration>
+</component>

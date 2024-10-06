@@ -1,0 +1,7 @@
+version: "3"
+services:
+  database:
+    build: ./backend_data
+    restart: always
+    ports:
+      - "3306:3306"

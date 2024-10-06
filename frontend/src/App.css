@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ticket-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add spacing between columns */
+  }
+  
+  .column {
+    flex: 1 1 300px;
+    margin: 10px;
+    border: 1px solid black; /* Add border to separate columns */
+    padding: 10px; /* Add padding for spacing within columns */
+  }
+  
+  .popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .popup.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  button {
+    margin-right: 10px;
+    margin-bottom: 10px; /* Add margin-bottom for spacing below buttons */
+  }
+  .submitted-tickets {
+    margin-top: 20px;
+  }
+  
+  .ticket-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .ticket-info {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  
